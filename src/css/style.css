@@ -1,0 +1,245 @@
+*{
+  box-sizing: border-box;
+}
+/*font-family: 'Bebas Neue', cursive;*/
+
+
+body, ul{
+  margin: 0;
+  padding: 0;
+}
+a{
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+a:hover{
+  background: rgba(0, 0, 0, .05);
+}
+#logo{
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: 'Barlow', sans-serif;
+}
+#header{
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1B48AB;
+  
+}
+#menu{
+  display: flex;
+  font-size: 1.1rem;
+  list-style: none;
+  gap: .5rem;
+  
+}
+#menu a{
+  display: block;
+  padding: .5rem;
+  font-family: 'Barlow', sans-serif;
+}
+#btn-mobile{
+  display: none;
+}
+.principal{
+  height: calc(100vh - 70px);
+  background-image: url('/src/img/Texto\ do\ seu\ parágrafo.png');
+  border: 0;
+  padding: 0;
+  background-attachment: fixed;
+}
+.textprincipal{
+  position: absolute;
+  text-align: center;
+  top: calc(50% - 70px);
+  left: 50%;
+ 
+  transform: translate(-50%, -50%);
+  
+  font-family: 'Bebas Neue', cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.0;
+  letter-spacing: 5px;
+  text-shadow: 1px 2px 5px #407f7b;
+  color: #6BD4CD;
+
+  background-attachment: fixed;
+}
+.principal-div{
+  background-attachment: fixed;
+}
+.habilidades{
+  background-color: #123377;
+}
+.sub-div{
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+}
+.html{
+  background-color: white;
+  color: #000000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.801);
+  height: 35vh;
+  width: 30vh;
+  margin: 3vh 5vh 5vh 5vh;
+  border-radius: 20px;
+  
+  text-align: center;
+}
+.html:hover{
+  box-shadow: 1px 1px 15px 5px  #f06524 ;
+}
+.html img{
+  margin-top: 20px;
+  height: 25vh;
+  width: 25vh;
+}
+.css{
+  background-color: white;
+  color: #000000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.801);
+  height: 35vh;
+  width: 30vh;
+  margin: 3vh 5vh 5vh 5vh;
+  border-radius: 20px;
+  
+  text-align: center;
+}
+.css:hover{
+  box-shadow: 1px 1px 15px 5px  #2a65f1;
+}
+.css img{
+  margin-top: 20px;
+  height: 25vh;
+  width: 20vh;
+}
+.javascript{
+  background-color: white;
+  color: #000000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.801);
+  height: 35vh;
+  width: 30vh;
+  margin: 3vh 5vh 5vh 5vh;
+  border-radius: 20px;
+
+  text-align: center;
+}
+.javascript:hover{
+  box-shadow: 1px 1px 15px 5px #ffde25 ;
+}
+.javascript img{
+  margin-top: 20px;
+  height: 25vh;
+  width: 25vh;
+}
+
+.perspective-left {
+  transform: perspective(1500px) rotateY(15deg);
+  transition: transform 1s ease 0s;
+}
+
+.perspective-left:hover {
+  transform: perspective(3000px) rotateY(5deg);
+}
+
+.perspective-right {
+  transform: perspective(1500px) rotateY(-15deg);
+  transition: transform 1s ease 0s;
+}
+
+.perspective-right:hover {
+  transform: perspective(3000px) rotateY(-5deg);
+}
+.sub-text{
+  display: block;
+  color: rgb(255, 255, 255);
+  font-family: 'Barlow', sans-serif;
+  font-weight: normal;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1vh 0vh 2vh 0vh;
+}
+@media (max-width: 600px){
+  .textprincipal{
+    font-size: 2.5rem;
+  }
+  #btn-mobile{
+    display: block;
+    padding: .5rem;
+  }
+  #menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #173d8f;
+    height: 0;
+    transition: .4s;
+    z-index: 1000000000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu{
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem;
+    margin: 0 .1rem;
+    border-bottom: 2px solid rgba(0, 0, 0,.05);
+  }
+  .hamburger-menu {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu .bar {
+    height: 5px;
+    background: black;
+    border-radius: 5px;
+    margin: 3px 0px;
+    transform-origin: left;
+    transition: all 0.5s;
+  }
+  
+  #nav.active .hamburger-menu:hover .top {
+    transform: rotate(45deg);
+  }
+  
+  #nav.active .hamburger-menu:hover .middle {
+    opacity: 0;
+  }
+  
+  #nav.active .hamburger-menu:hover .bottom {
+    transform: rotate(-45deg);
+}
+.sub-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.html{
+
+  text-align: center;
+  
+}
+.css{
+
+  margin: 5vh 0;
+}
+.javascript{
+  margin: 5vh 0 ;
+}
+}
