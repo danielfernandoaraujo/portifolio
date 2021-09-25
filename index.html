@@ -1,47 +1,86 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="en">
 <head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/scr/styles/quiz.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,400&display=swap">   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
-    <title>Quiz de programação</title>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&family=Bebas+Neue&display=swap');
+  </style>
+  <title>Daniel Dev</title>
 </head>
 <body>
-    <div id="page" class="page">
-   <div class="texto01" id="texto01">
-        <h1 id="title01">Quiz de programação</h1>
-   </div>
-        
-    <section>
-        <div id="content">
-        
-            
-            <h3 id="sub">Seja bem vindo, qual o seu nome?</h3>
-            <form id="formulario" method="post" autocomplete="off" action=""></form>
-                <input type="text" name="" placeholder="Seu nome" id="name" autocomplete="off" required>
-                <button onclick="enviar()" type="submit" id="enviar" >Começar</button>
-                <p id="alert"></p>
-            </form>
- 
+  <!--
+  <header id="header">
 
+    <a id='logo' href="">Daniel Fernando</a>
+
+      <nav id="nav">
+
+        <div id="btn-mobile" class="hamburger-menu">
+          <div class="bar top"></div>
+          <div class="bar middle"></div>
+          <div class="bar bottom"></div>
         </div>
-    </section>
-        <footer>
-             <p id="daniel">Feito por Daniel Fernando</a></p>
-         </footer>
+
+        <ul id="menu">
+          <li><a href="">Sobre</a></li>
+          <li><a href="">Portifolio</a></li>
+          <li><a href="">Contato</a></li>
+        </ul>
+
+    </nav>
+  </header>
+  -->
+  <div class="habilidades" >
+
+    <div class="principal-div">
+      <section class="principal">
+        <p class="textprincipal"> Desenvolvedor <br> Front-End <br></p>
+      </section>
     </div>
+    <div>
+      <p class="sub-text" data-aos="zoom-in">Habilidades</p>
+    </div>
+    <div class="sub-div">  
+      <div class="html perspective-left" data-aos="zoom-in-right" data-aos-duration="1000"> 
+        <img src="/src/img/1200px-HTML5_logo_and_wordmark.svg.png" alt="">
+          <p>HTML3</p>
+      </div>
+      <div class="css perspective-center" data-aos="zoom-out" data-aos-duration="1000">
+        <img src="/src/img/css-3-logo-1.png" alt="">
+          <p>CSS5</p>
+      </div>
+      <div class="javascript perspective-right" data-aos="zoom-in-left" data-aos-duration="1000">
+        <img src="/src/img/javascript-2038874-1720087.webp" alt="">
+          <p>JAVASCRIPT</p>
+      </div>
+    </div>
+    <!-- <div>
+      <p class="sub-text">Sobre mim</p>
+    </div> -->
+    <div>
+      <p class="sub-text">Sobre mim</p>
+    </div>
+    <div class="bio">
+        <div class="myimg" data-aos="fade-right"><img src="/src/img/IMG 2.png" alt="" ><p class="sub-bio" data-aos="fade-right">Daniel Fernando</p>   
+        </div>
+        <div class="bio-box mybio" data-aos="fade-left"><h1>Olá,<br>Sou Daniel Fernando,
+          um jovem programador e amante de tecnologia que acredita que tudo pode ser transformado com ela,
+          com um pouco de paciência e café é possível para criar qualquer coisa.
+        </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy;Daniel Fernando</p>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"> </script>
+  <script src="/src/js/menu.js"></script>
+  <script>AOS.init();</script>
 </body>
-    <script src="/scr/javascript/page.js" defer></script>
 </html>
