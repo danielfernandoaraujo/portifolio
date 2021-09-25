@@ -2,11 +2,10 @@
   box-sizing: border-box;
 }
 /*font-family: 'Bebas Neue', cursive;*/
-
-
 body, ul{
   margin: 0;
   padding: 0;
+  background-color: rgba(44, 51, 59);
 }
 a{
   color: white;
@@ -46,11 +45,10 @@ a:hover{
   display: none;
 }
 .principal{
-  height: calc(100vh - 70px);
-  background-image: url('/src/img/Texto\ do\ seu\ parágrafo.png');
+  height: 100vh /*calc(100vh - 70px)*/;
+  background: rgb(28,33,39);
   border: 0;
   padding: 0;
-  background-attachment: fixed;
 }
 .textprincipal{
   position: absolute;
@@ -63,37 +61,60 @@ a:hover{
   font-family: 'Bebas Neue', cursive;
   font-size: 4rem;
   font-weight: bold;
-  line-height: 1.0;
+  line-height: 1;
   letter-spacing: 5px;
-  text-shadow: 1px 2px 5px #407f7b;
-  color: #6BD4CD;
-
-  background-attachment: fixed;
+  color: rgba(161, 176, 207);
+  
+}
+.textprincipal2 strong {
+  font-weight: bold;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0;
+  
+  color: rgba(161, 176, 207); 
 }
 .principal-div{
-  background-attachment: fixed;
 }
 .habilidades{
-  background-color: #123377;
+  background-color: rgba(44, 51, 59);
 }
 .sub-div{
   min-height: 30vh;
   display: flex;
   justify-content: center;
 }
+.sub-text{
+  display: block;
+  color: rgba(161, 176, 207);
+  
+  font-family: 'Barlow', sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow:1px 1px 5px 6px #6BD4CD ;
+
+  margin: 1vh 0vh 2vh 0vh;
+}
 .html{
-  background-color: white;
+  background-color: rgba(154, 163, 173, 0.26);
   color: #000000;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.801);
   height: 35vh;
   width: 30vh;
   margin: 3vh 5vh 5vh 5vh;
+  border: 2px solid #f06524;
   border-radius: 20px;
   
+  font-family: 'Barlow', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
   text-align: center;
+  transition: all 0.4s;
 }
 .html:hover{
-  box-shadow: 1px 1px 15px 5px  #f06524 ;
+  box-shadow: 1px 1px 7px 1px  #f06524 ;
 }
 .html img{
   margin-top: 20px;
@@ -101,18 +122,21 @@ a:hover{
   width: 25vh;
 }
 .css{
-  background-color: white;
-  color: #000000;
+  background-color: rgba(154, 163, 173, 0.26);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.801);
   height: 35vh;
   width: 30vh;
   margin: 3vh 5vh 5vh 5vh;
   border-radius: 20px;
+  border: 2px solid #2a65f1;
   
+  font-family: 'Barlow', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
   text-align: center;
 }
 .css:hover{
-  box-shadow: 1px 1px 15px 5px  #2a65f1;
+  box-shadow: 1px 1px 7px 1px  #2a65f1;
 }
 .css img{
   margin-top: 20px;
@@ -120,50 +144,82 @@ a:hover{
   width: 20vh;
 }
 .javascript{
-  background-color: white;
-  color: #000000;
+  background-color: rgba(154, 163, 173, 0.26);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.801);
   height: 35vh;
   width: 30vh;
   margin: 3vh 5vh 5vh 5vh;
   border-radius: 20px;
+  border: 2px solid #ffde25;
+   
+  font-family: 'Barlow', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
 
   text-align: center;
 }
 .javascript:hover{
-  box-shadow: 1px 1px 15px 5px #ffde25 ;
+  box-shadow: 1px 1px 7px 1px #ffde25 ;
 }
 .javascript img{
   margin-top: 20px;
   height: 25vh;
   width: 25vh;
-}
 
-.perspective-left {
-  transform: perspective(1500px) rotateY(15deg);
-  transition: transform 1s ease 0s;
 }
+.bio{
+  /*Melhor forma de centralizar um elemeto*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 52vh;
+}
+.bio-box{
+  display: flex;
 
-.perspective-left:hover {
-  transform: perspective(3000px) rotateY(5deg);
+  background-color: rgba(154, 163, 173, 0.26);
+  width: 70vh;
+  min-height: 40vh;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px black;
 }
-
-.perspective-right {
-  transform: perspective(1500px) rotateY(-15deg);
-  transition: transform 1s ease 0s;
+.myimg {
 }
-
-.perspective-right:hover {
-  transform: perspective(3000px) rotateY(-5deg);
+.myimg img{
+  border-radius: 50%;
+  width: 35vh;
+  margin: 0vh 2vh 0vh 2vh;
+  border: 5px solid rgba(102, 51, 153, 0.288);
 }
-.sub-text{
-  display: block;
-  color: rgb(255, 255, 255);
-  font-family: 'Barlow', sans-serif;
-  font-weight: normal;
-  font-size: 2.5rem;
+.sub-bio{
   text-align: center;
-  margin: 1vh 0vh 2vh 0vh;
+  font-size: 1.4rem;
+  font-family: 'Barlow', sans-serif;
+  margin-top: 0;
+  color: rgba(161, 176, 207);
+}
+.mybio h1{
+  font-size: 1.3rem;
+  color: RGB(169, 187, 205);
+  margin: 10px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+footer{
+  display: flex;
+  width: 100%;
+  min-height: 20vh;
+  background: rgb(28,33,39);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+footer p{
+  margin: 0;
+  color: white;
+  font-family: 'Barlow', sans-serif;
 }
 @media (max-width: 600px){
   .textprincipal{
@@ -211,7 +267,7 @@ a:hover{
     border-radius: 5px;
     margin: 3px 0px;
     transform-origin: left;
-    transition: all 0.5s;
+    transition: all 0.4s;
   }
   
   #nav.active .hamburger-menu:hover .top {
@@ -242,4 +298,18 @@ a:hover{
 .javascript{
   margin: 5vh 0 ;
 }
+.bio-box{
+  width: 90%;
+  align-content: center;
+}
+.bio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mybio h1{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 }
