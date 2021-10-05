@@ -6,7 +6,9 @@ body, ul{
   margin: 0;
   padding: 0;
   background-color: rgba(44, 51, 59);
+  
 }
+/*
 a{
   color: white;
   font-family: sans-serif;
@@ -26,7 +28,7 @@ a:hover{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1B48AB;
+  background-color: rgb(28,33,39);
   
 }
 #menu{
@@ -43,28 +45,29 @@ a:hover{
 }
 #btn-mobile{
   display: none;
-}
+
+}*/
+
 .principal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
   height: 100vh /*calc(100vh - 70px)*/;
-  background: rgb(28,33,39);
-  border: 0;
-  padding: 0;
+  width: 100%;
+  background-image: url(/src/img/BANNER-WAVES_1-min.gif);
+  background-attachment: fixed;
 }
 .textprincipal{
-  position: absolute;
   text-align: center;
-  top: calc(50% - 70px);
-  left: 50%;
- 
-  transform: translate(-50%, -50%);
-  
   font-family: 'Bebas Neue', cursive;
   font-size: 4rem;
   font-weight: bold;
   line-height: 1;
   letter-spacing: 5px;
+
   color: rgba(161, 176, 207);
-  
 }
 .textprincipal2 strong {
   font-weight: bold;
@@ -75,10 +78,8 @@ a:hover{
   
   color: rgba(161, 176, 207); 
 }
-.principal-div{
-}
 .habilidades{
-  background-color: rgba(44, 51, 59);
+  background-color: #1d2d47;
 }
 .sub-div{
   min-height: 30vh;
@@ -165,7 +166,6 @@ a:hover{
   margin-top: 20px;
   height: 25vh;
   width: 25vh;
-
 }
 .bio{
   /*Melhor forma de centralizar um elemeto*/
@@ -183,8 +183,6 @@ a:hover{
   border-radius: 10px;
   box-shadow: 1px 1px 10px black;
 }
-.myimg {
-}
 .myimg img{
   border-radius: 50%;
   width: 35vh;
@@ -197,6 +195,7 @@ a:hover{
   font-family: 'Barlow', sans-serif;
   margin-top: 0;
   color: rgba(161, 176, 207);
+
 }
 .mybio h1{
   font-size: 1.3rem;
@@ -210,11 +209,10 @@ footer{
   display: flex;
   width: 100%;
   min-height: 20vh;
-  background: rgb(28,33,39);
+  background: #051939;
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 footer p{
   margin: 0;
@@ -223,7 +221,7 @@ footer p{
 }
 @media (max-width: 600px){
   .textprincipal{
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   #btn-mobile{
     display: block;
@@ -235,7 +233,7 @@ footer p{
     width: 100%;
     top: 70px;
     right: 0px;
-    background: #173d8f;
+    background: rgb(28,33,39);
     height: 0;
     transition: .4s;
     z-index: 1000000000;
@@ -287,9 +285,7 @@ footer p{
   align-items: center;
 }
 .html{
-
   text-align: center;
-  
 }
 .css{
 
