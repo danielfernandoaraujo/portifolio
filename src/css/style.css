@@ -8,6 +8,9 @@ body, ul{
   background-color: rgba(44, 51, 59);
   
 }
+p{
+  margin: 0;
+}
 /*
 a{
   color: white;
@@ -50,8 +53,9 @@ a:hover{
 
 .principal{
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
+  flex-direction: column;
 
 
   height: 100vh /*calc(100vh - 70px)*/;
@@ -68,6 +72,16 @@ a:hover{
   letter-spacing: 5px;
 
   color: rgba(161, 176, 207);
+}
+hr{
+  width: 19%;
+  opacity: 20%;
+}
+.textsubprincipal{
+  color: rgba(161, 176, 207);
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
+  opacity: 70%;
 }
 .textprincipal2 strong {
   font-weight: bold;
@@ -198,7 +212,6 @@ a:hover{
 
 }
 .mybio h1{
-  font-size: 1.3rem;
   color: RGB(169, 187, 205);
   margin: 10px;
   font-family: 'Barlow', sans-serif;
@@ -208,14 +221,15 @@ a:hover{
 footer{
   display: flex;
   width: 100%;
-  min-height: 20vh;
+  min-height: 10vh;
   background: #051939;
   text-align: center;
   justify-content: center;
-  align-items: center;
+  align-items:flex-start ;
 }
 footer p{
   margin: 0;
+  margin-top: 5px;
   color: white;
   font-family: 'Barlow', sans-serif;
 }
