@@ -265,62 +265,6 @@ footer p{
   .textprincipal{
     font-size: 3rem;
   }
-  #btn-mobile{
-    display: block;
-    padding: .5rem;
-  }
-  #menu{
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 70px;
-    right: 0px;
-    background: rgb(28,33,39);
-    height: 0;
-    transition: .4s;
-    z-index: 1000000000;
-    visibility: hidden;
-    overflow-y: hidden;
-  }
-  #nav.active #menu{
-    height: calc(100vh - 70px);
-    visibility: visible;
-    overflow-y: auto;
-  }
-  #menu a {
-    padding: 1rem;
-    margin: 0 .1rem;
-    border-bottom: 2px solid rgba(0, 0, 0,.05);
-  }
-  .hamburger-menu {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    height: 2.5rem;
-    width: 2.5rem;
-    cursor: pointer;
-  }
-  
-  .hamburger-menu .bar {
-    height: 5px;
-    background: black;
-    border-radius: 5px;
-    margin: 3px 0px;
-    transform-origin: left;
-    transition: all 0.4s;
-  }
-  
-  #nav.active .hamburger-menu:hover .top {
-    transform: rotate(45deg);
-  }
-  
-  #nav.active .hamburger-menu:hover .middle {
-    opacity: 0;
-  }
-  
-  #nav.active .hamburger-menu:hover .bottom {
-    transform: rotate(-45deg);
-}
 .sub-div{
   display: flex;
   flex-direction: column;
@@ -347,6 +291,9 @@ footer p{
   align-items: center;
   height: 120vh;
  
+}
+.sub-bio{
+  margin-bottom: 10px;
 }
 .mybio h1{
   font-size: 1.5rem;
