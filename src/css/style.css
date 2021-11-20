@@ -189,14 +189,20 @@ hr{
   align-items: center;
   min-height: 52vh;
 }
+
 .bio-box{
   display: flex;
 
-  background-color: rgba(154, 163, 173, 0.26);
+ 
   width: 70vh;
   min-height: 40vh;
   border-radius: 10px;
-  box-shadow: 1px 1px 10px black;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .myimg img{
   border-radius: 50%;
@@ -213,11 +219,16 @@ hr{
 
 }
 .mybio h1{
-  color: RGB(169, 187, 205);
+  color: rgb(255, 255, 255);
   margin: 10px;
   font-family: 'Barlow', sans-serif;
-  font-weight: 400;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+.mybio strong{
+  color: #ffffff;
   font-size: 1.8rem;
+  font-weight: bold;
 }
 footer{
   display: flex;
@@ -232,14 +243,23 @@ footer{
 footer p{
   font-size: 1.2rem;
   margin: 0;
-  margin-top: 5px;
+  margin-bottom: 5px;
   color: white;
   font-family: 'Barlow', sans-serif;
+  opacity: 50%;
 }
 .icons{
   display: flex;
-
-  justify-content: space-between
+  width: 100%;
+  opacity: 70%;
+  justify-content: center;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+.icons a:hover{
+  transform: scale(1.1);
+  opacity: 100%;
+  
 }
 @media (max-width: 600px){
   .textprincipal{
@@ -325,11 +345,12 @@ footer p{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 120vh;
+ 
 }
 .mybio h1{
   font-size: 1.5rem;
-  text-align: center;
+  text-align: left;
 }
 
 }
