@@ -12,8 +12,8 @@ body{
   align-items: center;
   flex-direction: column;
 
+
   height: 100vh;
-  
   background-image: url(/src/img/BANNER-WAVES_1-min.gif);
   background-attachment: fixed;
 }
@@ -24,17 +24,19 @@ body{
   font-weight: bold;
   line-height: 1;
   letter-spacing: 5px;
+  margin: 2px;
 
   color: rgba(161, 176, 207);
 }
 hr{
-  width: 19%;
+  width: 35vh;
   opacity: 20%;
 }
 .textsubprincipal{
   color: rgba(161, 176, 207);
   font-family: 'Bebas Neue', cursive;
   font-size: 1.5rem;
+  margin: 2px;
   opacity: 70%;
 }
 .textprincipal2 strong {
