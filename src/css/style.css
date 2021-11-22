@@ -13,8 +13,8 @@ body{
   flex-direction: column;
 
 
-  min-height: 100vh;
-  min-width: 100vw;
+  height: 100vh;
+  width: 100vw;
   background-image: url(/src/img/BANNER-WAVES_1-min.gif);
   background-attachment: fixed;
 }
@@ -173,16 +173,16 @@ hr{
   color: rgba(161, 176, 207);
 
 }
-.mybio h1{
+.bio-text{
   color: rgb(255, 255, 255);
   margin: 10px;
   font-family: 'Barlow', sans-serif;
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: 3.4vh;
 }
-.mybio strong{
+.bio-text strong{
   color: #ffffff;
-  font-size: 1.8rem;
+  font-size: 4vh;
   font-weight: bold;
 }
 footer{
