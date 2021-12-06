@@ -19,7 +19,7 @@ body{
 }
 .textprincipal{
   text-align: center;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Bebas Neue', cursive;
   font-size: 4rem;
   font-weight: bold;
   line-height: 1;
@@ -138,6 +138,26 @@ hr{
   height: 25vh;
   width: 25vh;
 }
+.react{
+  border: 2px solid #60dbfc;
+}
+.react:hover{
+  box-shadow: 1px 1px 10px 1px #60dbfc ;
+}
+.react img{ 
+  margin-top: 40px;
+  width: 20vh;
+  height: 20vh;
+}
+.react p{
+  margin-top: 30px;
+}
+.styledComponents{
+  border: 2px solid #d97ab4;
+}
+.styledComponents:hover{
+  box-shadow: 1px 1px 10px 1px #d97ab4;
+}
 .bio{
   /*Melhor forma de centralizar um elemeto*/
   display: flex;
@@ -179,7 +199,7 @@ hr{
   margin: 10px;
   font-family: 'Barlow', sans-serif;
   font-weight: 200;
-  font-size: 3.6vh;
+  font-size: 3.4vh;
 }
 .bio-text strong{
   color: #ffffff;
@@ -245,7 +265,7 @@ footer p{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 120vh;
  
 }
 .sub-bio{
