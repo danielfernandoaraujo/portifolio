@@ -163,6 +163,8 @@ hr{
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  max-height:105vh;
   min-height: 52vh;
 }
 
